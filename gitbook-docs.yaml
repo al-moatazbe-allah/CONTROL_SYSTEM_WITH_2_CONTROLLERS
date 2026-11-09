@@ -1,0 +1,16 @@
+version: 1
+structure:
+  - type: section
+    title: <Section Name>
+    path: <url-path-segment>
+    contents:
+      - type: space
+        title: <Space Name>
+        path: <url-path-segment>
+        content:
+          directory: <relative/path/to/markdown/dir>
+  - type: space
+    title: <Standalone Space Name>
+    path: <url-path-segment>
+    content:
+      directory: <relative/path/to/markdown/dir>
