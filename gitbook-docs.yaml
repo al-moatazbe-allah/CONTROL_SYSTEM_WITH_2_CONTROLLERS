@@ -1,16 +1,27 @@
 version: 1
-structure:
-  - type: section
-    title: <Section Name>
-    path: <url-path-segment>
-    contents:
-      - type: space
-        title: <Space Name>
-        path: <url-path-segment>
-        content:
-          directory: <relative/path/to/markdown/dir>
-  - type: space
-    title: <Standalone Space Name>
-    path: <url-path-segment>
-    content:
-      directory: <relative/path/to/markdown/dir>
+site:
+  structure:
+    - type: section
+      title: Getting Started
+      path: /getting-started
+      contents:
+        - type: space
+          title: Overview
+          path: /overview
+          content:
+            directory: docs/overview
+        - type: space
+          title: Architecture
+          path: /architecture
+          content:
+            directory: docs/architecture
+
+    - type: section
+      title: System Configuration
+      path: /configuration
+      contents:
+        - type: space
+          title: Controllers Setup
+          path: /controllers
+          content:
+            directory: docs/controllers
